@@ -140,9 +140,6 @@ public class UserInterface {
 				//Creating object of currentAccount class
 				CurrentAccount currentAccount=new CurrentAccount(accountNum, customerName, balance);
 			    maintenanceCharge=currentAccount.calculateMaintenanceCharge(noOfYear);
-			    System.out.println("Customer Name "+currentAccount.getCustomerName());
-				System.out.println("Account Number "+currentAccount.getAccountNumber());
-				System.out.println("Account Balance "+currentAccount.getBalance());
 				currentAccount.displayInformation();
 				System.out.println("Maintenance Charge for Current Account is Rs "+maintenanceCharge);
 				break;
