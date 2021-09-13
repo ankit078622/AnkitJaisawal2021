@@ -8,7 +8,7 @@ public class InsertElementInLinkedListAtSpecifiedPosition {
 	
 	public static void main(String args[]) {
 		
-		List<String> linkedlist=new LinkedList<String>();
+		LinkedList<String> linkedlist=new LinkedList<String>();
 		linkedlist.add("Ravinder");
 		linkedlist.add("Sachin");
 		linkedlist.add("Arvind");
