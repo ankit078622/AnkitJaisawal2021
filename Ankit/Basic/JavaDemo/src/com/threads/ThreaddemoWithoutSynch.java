@@ -1,5 +1,5 @@
 package com.threads;
-
+/*
 class Table{
 	void printTable(int n) {
 		for(int i=1;i<=5;i++) {
@@ -48,3 +48,16 @@ public class ThreaddemoWithoutSynch {
 	}
 
 }
+*/
+public class ThreaddemoWithoutSynch extends Thread {
+private static int x;
+public synchronized void doThings() {
+ int current = x;
+ current++;
+ x = current;
+ }
+public void run() {
+ doThings();
+ }
+}
+
