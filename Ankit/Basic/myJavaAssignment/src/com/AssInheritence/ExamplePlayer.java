@@ -27,6 +27,8 @@ class FootbalPlayer extends Player{
 public abstract class ExamplePlayer {
  
 	public static void main(String args[]){
+		
+		
 		Player player=new CricketPlayer("Amit");
 		player.play();
 		
