@@ -1,9 +1,8 @@
 package com.collection;
-//Write a Java program to get the first and last elements in a tree set. 
+//Write a Java program to get the number of elements in a tree set.
 import java.util.NavigableSet;
 import java.util.TreeSet;
-
-public class FirstAndLastElementInTreeSet {
+public class GetNumberOfElementInTreeSet {
 	
 	public static void main(String args[]) {
 		NavigableSet<String> treeset=new TreeSet<String>();
@@ -14,9 +13,8 @@ public class FirstAndLastElementInTreeSet {
 		treeset.add("Brown");
 		treeset.add("White");
 		
-		Object firstelement=treeset.first();
-		Object lastelement=treeset.last();
-		System.out.println("First Element : "+firstelement+"\nLast Element : "+lastelement);
+		System.out.println("Tree set Elements are : "+treeset+"\n Size of treeset is : "+treeset.size());
+
 	}
 
 }
