@@ -57,16 +57,15 @@ public class NumberTypeUtility {
 				return false;
 			}
 		};
-		
-		//Taking input from user
-		
-		
+				
 		return numbertype;
 		
 	}
 	
 	//Main method
 	public static void main(String args[])throws IOException {
+		
+		//Taking input from user
 		DataInputStream userinput=new DataInputStream(System.in);
 		int num;
 		num=Integer.parseInt(userinput.readLine());
