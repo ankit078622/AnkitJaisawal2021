@@ -28,7 +28,7 @@ public static void main(String args[]) {
 				System.out.println("Emp name : "+rs.getString("ename"));
 				System.out.println("Job : "+rs.getString("job"));
 				System.out.println("Salary : "+rs.getInt("sal"));
-				System.out.println("");
+				System.out.println("Comm : "+rs.getString("comm"));
 				
 			}
 				
