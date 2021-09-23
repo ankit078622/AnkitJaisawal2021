@@ -35,7 +35,7 @@ public class StudentManager {
 	
 		/*Update employee records in database*/
 		try {
-			studentServices.updateStudentDetails(6, "Python");
+			studentServices.updateStudentDetails(4, "Python");
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -43,7 +43,7 @@ public class StudentManager {
 		
 		/* delete employee records in database by id */
 		try {
-			studentServices.deleteStudentById(12, "Python");
+			studentServices.deleteStudentById(5, "Python");
 		}
 		catch(Exception e) {
 			e.printStackTrace();
