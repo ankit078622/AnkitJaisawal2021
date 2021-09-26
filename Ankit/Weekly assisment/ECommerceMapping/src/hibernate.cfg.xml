@@ -24,6 +24,7 @@
 		<mapping class="com.entity.SalesOrder" />
 		<mapping class="com.entity.Product" />
 		<mapping class="com.entity.CartItem" />
+		<mapping class="com.entity.Authorities" />
 
 	</session-factory>
 
