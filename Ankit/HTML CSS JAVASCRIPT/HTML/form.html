@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Code for the registration form -->
+<html>
+<head>
+<title>Form</title>
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <h1>Registration Form</h1>
+<form autocomplete="on" >
+<table border="1" cellspacing="5">
+<!--<col style="background-color:blue;"></col>-->
+<tr>
+<th><label>First Name:<sup style="color:red;">*</sup></label></th>
+<td><input type="text" placeholder="Enter first name" size="30" required>
+</tr> 
+<tr>
+<th><label>Second Name:<sup style="color:red;">*</sup></label></th>
+<td><input type="text" placeholder="Enter Second Name" size="30" required>
+</tr>
+<tr>
+<th><label>Gender:<sup style="color:red;">*</sup></label></th>
+<td>
+<input name="g" type="radio" >Male
+<input name="g" type="radio" >Female
+</td>
+</tr>
+<tr>
+<th><label>Email:<sup style="color:red;">*</sup></label></th>
+<td><input type="email" placeholder="Enter email id" size="30" required>
+</tr>   
+<tr>
+<th><label>Age:<sup style="color:red;">*</sup></label></th>
+<td><input type="number" placeholder="Enter age" size="30" required></td>
+</tr>
+<tr>
+<th><label>Mobile Number:<sup style="color:red;">*</sup></label></th>
+<td><input type="number" pattern="[6-9]{1}[0-9]{9}" placeholder="Enter number" size="30"></td>
+</tr>
+<tr>
+<th><label>Course:<sup style="color:red;">*</sup></label></th>
+<td><input type="checkbox" >C<input type="checkbox" >Java<input type="checkbox" >.Net</td>
+</tr>
+
+<tr>
+<th><label>Address:<sup style="color:red;">*</sup></label></th>
+<td><input type="text" placeholder="Enter the address" size="30"> </td>
+</tr>
+<tr>
+<th><label>Country:<sup style="color:red;">*</sup></label></th>
+<td><select>
+<option>Please select the country</option>
+<option>India</option>
+<option>US</option>
+<option>UK</option>
+</select></td>
+</tr>
+<tr>
+<th><label>State:<sup style="color:red;">*</sup></label></th>
+<td><select>
+<option>Please select the state</option>
+<option>Uttar Pradesh</option>
+<option>Bihar</option>
+<option>Maharastra</option>
+</select></td>
+</tr>
+<tr>
+<th><label>City:<sup style="color:red;">*</sup></label></th>
+<td><select>
+<option>Please select the city</option>
+<option>Ballia</option>
+<option>Patna</option>
+<option>Buxar</option>
+</select></td>
+</tr>
+<tr><th><input type="button" value="Submit" ></th></tr>
+</table>
+
+</form>
+</center>
+</body>
+</html>
