@@ -1,6 +1,7 @@
 package com.entity;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,14 +12,22 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Table(name="CartItem")
 public class CartItem {
 
 	@Id
+	@NotNull
+	@Column(name="cartItem_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer cartItem_id;
+	
+	@Column(name="quantity")
 	private Integer quantity;
+	
+	@Column(name="price")
 	private Double price;
 	
 	@ManyToOne(cascade = CascadeType.ALL)

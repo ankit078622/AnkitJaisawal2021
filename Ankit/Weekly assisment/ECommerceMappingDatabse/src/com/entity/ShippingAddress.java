@@ -3,6 +3,7 @@ package com.entity;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,17 +16,31 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.Cascade;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Table(name="ShippingAddress")
 public class ShippingAddress {
 
 	@Id
+	@NotNull
+	@Column(name="shippingAddress_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer shippingAddress_id;
+	
+	@Column(name="address")
 	private String address;
+	
+	@Column(name="city")
 	private String city;
+	
+	@Column(name="state")
 	private String state;
+	
+	@Column(name = "zipcode")
 	private Integer zipcode;
+	
+	@Column(name="country")
 	private String country;
 	
 	//Getters and setters

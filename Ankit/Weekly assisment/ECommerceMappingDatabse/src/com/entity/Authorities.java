@@ -1,19 +1,28 @@
 package com.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Table(name="authorities")
 public class Authorities {
 
 	@Id
+	@NotNull
+	@Column(name="authority_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer authority_id;
+	
+	@Column(name="email_id")
 	private String emailid;
+	
+	@Column(name="authorities")
 	private String authorities;
 	
 	

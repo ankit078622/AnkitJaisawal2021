@@ -3,6 +3,7 @@ package com.entity;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,17 +14,33 @@ import javax.persistence.OneToOne;
 import javax.persistence.OrderColumn;
 import javax.persistence.Table;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Table(name="BillingAddress")
 public class BillingAddress {
 
 	@Id
+	@NotNull
+	@Column(name="billingAddress_id")
 	@GeneratedValue(strategy =GenerationType.AUTO)
 	private Integer billingAddress_id;
+	
+	@Column(name="address")
 	private String address;
+	
+	@Column(name="city")
 	private String city;
+	
+	@Column(name="state")
 	private String state;
+	
+	@NotNull
+	@Column(name="zipcode")
 	private Integer zipcode;
+	
+	@NotNull
+	@Column(name="country")
 	private String country;
 	
 	//Getters and setters method

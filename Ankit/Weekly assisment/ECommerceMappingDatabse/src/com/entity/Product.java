@@ -3,6 +3,7 @@ package com.entity;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,17 +12,31 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderColumn;
 import javax.persistence.Table;
+
+import com.sun.istack.NotNull;
 @Entity
 @Table(name="Product")
 public class Product {
 
 	@Id
+	@NotNull
+	@Column(name="product_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer product_id;
+	
+	@Column(name="category")
 	private String category;
+	
+	@Column(name="description")
 	private String description;
+	
+	@Column(name="name")
 	private String name;
+	
+	@Column(name="price")
 	private double price;
+	
+	@Column(name="unit")
 	private Integer unit;
 	
 	

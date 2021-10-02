@@ -1,6 +1,7 @@
 package com.entity;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,11 +10,15 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Table(name="SalesOrder")
 public class SalesOrder {
 
 	@Id
+	@NotNull
+	@Column(name="salesOrder_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer salesOrder_id;
 	
