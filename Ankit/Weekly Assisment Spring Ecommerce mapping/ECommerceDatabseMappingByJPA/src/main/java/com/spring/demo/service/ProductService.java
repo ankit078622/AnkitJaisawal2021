@@ -7,7 +7,7 @@ import com.spring.demo.model.Product;
 
 public interface ProductService {
 
-	//add for product
+	    //add for product
 		Product addProduct(Product product);
 		
 		//List of all products
