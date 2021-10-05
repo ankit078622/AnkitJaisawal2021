@@ -20,6 +20,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.spring.demo.model.ShippingAddress;
 import com.spring.demo.serviceimpl.ShippingAddressServiceImpl;
 
+/**
+ * @author ankit.jaisawal
+ *
+ */
 @RestController
 public class ShippingAddressController {
 
@@ -28,6 +32,10 @@ public class ShippingAddressController {
 	@Autowired
 	ShippingAddressServiceImpl shippingAddressServiceImpl;
 	
+	/**
+	 * @param shippingAddress
+	 * @return
+	 */
 	@PostMapping("/addshippingaddress")
 	ResponseEntity<ShippingAddress> addShippingAddressDetails(@Valid @RequestBody ShippingAddress shippingAddress) {
 	LOGGER.info("inside ShippingAddressController.addShippingAddressDetails() method");
@@ -35,23 +43,33 @@ public class ShippingAddressController {
 		return new  ResponseEntity<ShippingAddress>(shippingAddress2,HttpStatus.ACCEPTED);
 	}
 	
+	/**
+	 * @return
+	 */
 	@GetMapping("/getshippingaddress")
 	ArrayList<ShippingAddress> getShippingAddressDetails() {
 		LOGGER.info("inside ShippingAddressController.getShippingAddressDetails() method");
 		ArrayList<ShippingAddress> listofshippingaddress=shippingAddressServiceImpl.listOfShippingAddress();
 		return listofshippingaddress;
 	}
-	
-	@PutMapping("/updateshippingaddress")
-	ResponseEntity<ShippingAddress> updateShippingAddressDetails(@Valid @RequestBody ShippingAddress shippingAddress) {
-		LOGGER.info("inside ShippingAddressController.updateShippingAddressDetails(ShippingAddress shippingAddress); method");
-		ShippingAddress updateshippingAddress2=shippingAddressServiceImpl.updateShippingAddress(shippingAddress);
-		return new  ResponseEntity<ShippingAddress>(updateshippingAddress2,HttpStatus.ACCEPTED);
-	}
 
+	/**
+	 * @param id
+	 */
 	@DeleteMapping("/deleteshippingaddressbyid/{id}")
 	public void deleteShippingAddressById(@Valid @PathVariable("id") Integer id) {
 		LOGGER.info("inside ShippingAddressController.deleteShippingAddressById(id) method");
 		shippingAddressServiceImpl.deleteShippingAddress(id);		
+	}
+	
+	/**
+	 * @param shippingAddress
+	 * @return
+	 */
+	@PutMapping("/updateshippingaddress")
+	ResponseEntity<ShippingAddress> updateShippingAddressDetails(@Valid @RequestBody ShippingAddress shippingAddress) {
+		LOGGER.info("inside ShippingAddressController.updateShippingAddressDetails(ShippingAddress shippingAddress); method");
+		ShippingAddress updateshippingaddress=shippingAddressServiceImpl.updateShippingAddress(shippingAddress);
+		return new  ResponseEntity<ShippingAddress>(updateshippingaddress,HttpStatus.ACCEPTED);
 	}
 }

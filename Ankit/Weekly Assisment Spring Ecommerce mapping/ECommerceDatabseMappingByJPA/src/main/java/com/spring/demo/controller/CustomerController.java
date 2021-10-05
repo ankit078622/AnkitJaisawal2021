@@ -20,6 +20,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.spring.demo.model.Customer;
 import com.spring.demo.serviceimpl.CustomerServiceImpl;
 
+
+/**
+ * @author ankit.jaisawal
+ *
+ */
 @RestController
 public class CustomerController {
 
@@ -28,6 +33,10 @@ public class CustomerController {
 	@Autowired
 	CustomerServiceImpl customerServiceImpl;
 	
+	/**
+	 * @param customer
+	 * @return
+	 */
 	@PostMapping("/addcustomerdtails")
 	ResponseEntity<Customer> addCustomerDetails(@Valid @RequestBody Customer customer) {
 	LOGGER.info("inside CustomerController.addCustomerDetails() method");
@@ -35,6 +44,9 @@ public class CustomerController {
 		return new  ResponseEntity<Customer>(customer2,HttpStatus.ACCEPTED);
 	}
 	
+	/**
+	 * @return
+	 */
 	@GetMapping("/getcustomerdetails")
 	ArrayList<Customer> getCustomerDetails() {
 		LOGGER.info("inside CustomerController.getCustomerDetails() method");
@@ -42,6 +54,10 @@ public class CustomerController {
 		return listofcustomer;
 	}
 	
+	/**
+	 * @param customer
+	 * @return
+	 */
 	@PutMapping("/updatecustomerdetails")
 	ResponseEntity<Customer> updateCustomerDetails(@Valid @RequestBody Customer customer) {
 		LOGGER.info("inside customerController.updatecustomerDetails(Customer customer); method");
@@ -49,6 +65,9 @@ public class CustomerController {
 		return new  ResponseEntity<Customer>(updatecustomer,HttpStatus.ACCEPTED);
 	}
 
+	/**
+	 * @param id
+	 */
 	@DeleteMapping("/deletecustomerbyid/{id}")
 	public void deleteCustomerById(@Valid @PathVariable("id") Integer id) {
 		LOGGER.info("inside customerController.deleteCustomerById(id) method");
