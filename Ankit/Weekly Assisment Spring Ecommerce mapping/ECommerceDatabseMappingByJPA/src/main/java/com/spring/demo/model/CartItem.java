@@ -1,5 +1,7 @@
 package com.spring.demo.model;
 
+import java.util.List;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -34,6 +37,11 @@ public class CartItem {
 	@JoinColumn(name="cart_Id")
 	private Cart cart;
 	
+	@OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="product_id")
+	private Product product;
+
+	
 	public Integer getCartItem_id() {
 		return cartItem_id;
 	}
@@ -57,6 +65,12 @@ public class CartItem {
 	}
 	public void setCart(Cart cart) {
 		this.cart = cart;
+	}
+	public Product getProduct() {
+		return product;
+	}
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 	
 	

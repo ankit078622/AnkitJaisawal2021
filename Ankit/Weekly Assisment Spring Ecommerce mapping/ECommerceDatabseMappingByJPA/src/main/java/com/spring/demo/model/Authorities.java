@@ -20,7 +20,7 @@ public class Authorities {
 	private Integer authority_id;
 	
 	@Column(name="email_id")
-	private String emailid;
+	private String emailid; 
 	
 	@Column(name="authorities")
 	private String authorities;

@@ -59,10 +59,6 @@ public class Product {
 		this.unit = unit;
 	}
 	
-	@OneToMany(cascade=CascadeType.ALL)
-	@JoinColumn(name="product_id")
-	private List<CartItem> cartItems;
-	
 	//Getters and setters method
 	public Integer getProduct_id() {
 		return product_id;
@@ -100,12 +96,5 @@ public class Product {
 	public void setUnit(Integer unit) {
 		this.unit = unit;
 	}
-	public List<CartItem> getCartItems() {
-		return cartItems;
-	}
-	public void setCartItems(List<CartItem> cartItems) {
-		this.cartItems = cartItems;
-	}
-	
-		
+			
 }
