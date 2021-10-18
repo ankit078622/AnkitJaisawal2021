@@ -20,7 +20,6 @@ import { ViewproductComponent } from './viewproduct/viewproduct.component';
   exports:[
     AddproductComponent,
     ViewproductComponent,
-    ViewproductComponent,
     EditproductComponent,
     DeleteproductComponent
   ]

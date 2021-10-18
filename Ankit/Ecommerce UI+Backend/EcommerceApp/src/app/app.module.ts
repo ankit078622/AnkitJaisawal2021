@@ -1,3 +1,4 @@
+import { UserModule } from './user/user.module';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,7 +20,8 @@ import { CustomerModule } from './customer/customer.module';
     FormsModule,
     SiteLayoutModule,
     ProductModule,
-    CustomerModule
+    CustomerModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

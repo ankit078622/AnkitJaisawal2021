@@ -17,7 +17,6 @@ import javax.persistence.criteria.CriteriaBuilder.In;
 
 import com.sun.istack.NotNull;
 
-
 /**
  * @author ankit.jaisawal
  *

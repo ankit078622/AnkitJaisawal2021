@@ -21,6 +21,26 @@ export class ProductService {
   public getProducts(): Observable<Product[]> {
     return this.httpClient.get<Product[]>(`${this.apiServerUrl}`);
   }
+
+  getProduct(id: number): Observable<any> {
+    return this.httpClient.get(`${this.apiServerUrl}/${id}`);
+  }
+  updateProduct(id: number, value: any): Observable<Object> {
+    return this.httpClient.put(`${this.apiServerUrl}/${id}`, value);
+  }
+
+  deleteProduct(id: number): Observable<any> {
+    return this.httpClient.delete(`${this.apiServerUrl}/${id}`, { responseType: 'text' });
+  }
+
+
+  // public updateProduct(product:Product): Observable<Product> {
+  //   return this.httpClient.put<Product>(`${this.apiServerUrl}`, product);
+  // }
+
+  // public deleteProduct(productId: number): Observable<void> {
+  //   return this.httpClient.delete<void>(`${this.apiServerUrl}/${productId}`);
+  // }
   // getProductList(): Observable<Product> {
   //   return this.httpClient.get<Product>(`${this.apiServerUrl}`);
   // }

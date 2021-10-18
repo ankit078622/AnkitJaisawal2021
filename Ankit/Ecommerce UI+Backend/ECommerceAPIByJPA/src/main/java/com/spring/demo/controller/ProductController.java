@@ -76,7 +76,7 @@ public class ProductController {
 	/**
 	 * @param id
 	 */
-	@DeleteMapping("/deleteproductbyid/{id}")
+	@DeleteMapping("/products/{id}")
 	public void deleteProductById(@Valid @PathVariable("id") Integer id) {
 		LOGGER.info("inside ProductController.deleteProductById(id) method");
 		productServiceImpl.deleteProductById(id);

@@ -1,3 +1,4 @@
+import { ViewproductComponent } from './product/viewproduct/viewproduct.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My name is ankit';
+  //ViewproductComponent v=new ViewproductComponent();
+
 }
