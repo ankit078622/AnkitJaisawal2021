@@ -1,0 +1,40 @@
+F:\himansifolder\himansi2021>git add .
+warning: LF will be replaced by CRLF in himanshi/webservice/department-service/.gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in himanshi/webservice/department-service/pom.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in himanshi/webservice/department-service/src/test/java/DepartmentRepositoryTest.java.
+The file will have its original line endings in your working directory
+ 
+F:\himansifolder\himansi2021>git status
+On branch master
+ 
+No commits yet
+ 
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   himanshi/webservice/department-service/.gitignore
+        new file:   himanshi/webservice/department-service/pom.xml
+        new file:   himanshi/webservice/department-service/src/main/java/pl/piomin/services/department/DepartmentApplication.java
+ 
+
+F:\himansifolder\himansi2021>git commit -m "microervices demo"
+[master (root-commit) 85799f0] microervices demo
+ 10 files changed, 460 insertions(+)
+ create mode 100644 himanshi/webservice/department-service/.gitignore
+ create mode 100644 himanshi/webservice/department-service/pom.xml
+ 
+ create mode 100644 himanshi/webservice/department-service/src/test/java/DepartmentRepositoryTest.java
+ 
+F:\himansifolder\himansi2021>git push -u origin master
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (29/29), 5.15 KiB | 92.00 KiB/s, done.
+Total 29 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/checkcc/himansi2021.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+ 
+F:\himansifolder\himansi2021>

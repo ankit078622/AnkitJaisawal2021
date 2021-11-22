@@ -1,0 +1,4 @@
+SQLEXPRESS_BU2
+
+username: sa
+password : Espire123

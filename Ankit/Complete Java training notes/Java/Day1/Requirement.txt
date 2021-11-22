@@ -1,0 +1,279 @@
+[17:28] Mantha Chakradhar Murthy (Guest)
+    
+ABSTRACT
+
+.
+iii
+Table of Contents
+Acknowledgements............................................................................................................. v
+1. Introduction..................................................................................................................... 1
+1.1 Goal........................................................................................................................... 1
+1.2 Need of the application ............................................................................................. 1
+1.3 Scope......................................................................................................................... 2
+1.4 Platform Specifications – Deployment ..................................................................... 2
+1.4.1 Hardware Specification...................................................................................... 2
+1.4.2 Software Specification....................................................................................... 3
+2. System Requirement Analysis ........................................................................................ 3
+2.1 Information Gathering .............................................................................................. 3
+2.2 System Feasibility..................................................................................................... 4
+2.2.1 Economic Feasibility ......................................................................................... 4
+2.2.2 Technical Feasibility.......................................................................................... 4
+2.2.3 Behavioral Feasibility ........................................................................................ 4
+3. System Analysis.............................................................................................................. 5
+3.1 ER Diagram .............................................................................................................. 5
+3.2 Data Flow Diagram................................................................................................... 6
+3.3 Use case Diagram ................................................................................................... 10
+3.4 Class Diagram......................................................................................................... 11
+4. Design ........................................................................................................................... 11
+4.1 Design Goals........................................................................................................... 11
+4.2Architectural Design ................................................................................................ 12
+4.2.1Architectural Context Diagram......................................................................... 12
+4.2.2 Description of Architectural Design ................................................................ 12
+4.3 Procedural/Modular Approach................................................................................ 13
+4.3.1 Shop Products Module..................................................................................... 13
+4.3.2 Product Description Module............................................................................ 13
+4.3.3 Cart Details Module......................................................................................... 13
+5. Implementation ............................................................................................................. 14
+5.1 Database Design and Implementation .................................................................... 14
+5.2 User Interface Design and Implementation ............................................................ 15
+5.3 Technical Discussions............................................................................................. 19
+6. Testing........................................................................................................................... 19
+6.1 Unit Testing ............................................................................................................ 19
+6.2 Integration Testing.................................................................................................. 20
+6.3 Validation Testing................................................................................................... 21
+6.4 White Box Testing .................................................................................................. 22
+6.5 Performance Testing ............................................................................................... 22
+7. Results & Challenges.................................................................................................... 24
+7.1 Challenges............................................................................................................... 25
+iv
+8. Conclusions................................................................................................................... 25
+8.1 Limitations .............................................................................................................. 25
+8.2 Scope for Future Work............................................................................................ 26
+9. References..................................................................................................................... 27
+v
+1
+1. Introduction
+1.1 Goal
+
+1.2 Need of the application
+Solution:
+.
+1.3 Scope
+1.4 Platform Specifications – Deployment
+1.4.1 Hardware Specification
+RAM 250 MB
+1.4.2 Software Specification
+2. System Requirement Analysis
+2.1
+2.2 System Feasibility
+The system feasibility can be divided into the following sections:
+2.2.1 Economic Feasibility
+The project is economically feasible as the only cost involved is having a
+computer with the minimum requirements mentioned earlier. For the users to access the
+application, the only cost involved will be in getting access to the Internet.
+2.2.2 Technical Feasibility
+To deploy the application, the only technical aspects needed are mentioned below:
+Operating Environment Win 2000/XP
+Platform .Net Framework & IIS
+Database SQL Server 2005
+For Users:
+Internet Browser
+Internet Connection
+2.2.3 Behavioral Feasibility
+The application requires no special technical guidance and all the views available
+in the application are self explanatory. The users are well guided with warning and failure
+messages for all the actions taken.
+5
+3. System Analysis
+After carefully analyzing the requirements and functionality of the web
+application, I had two important diagrams by the end of the analysis phase. They are the
+ER diagram and data flow diagram which were the basis for finding out entities and
+relationships between them, the flow of information.
+3.1 ER Diagram
+Figure 3.1 Entity Relation Ship Diagram
+6
+3.2 Data Flow Diagram
+Figure 3.2: A Context Level Diagram
+7
+Figure 3.3: A First Level Diagram
+8
+Figure 3.4: A Second Level Diagram
+9
+Figure 3.5: A Second Level Diagram
+10
+3.3 Use Case Diagram
+Figure 3.6: Use Case Diagram
+11
+3.4 Class Diagram
+Figure 3.7: Class Diagram
+4. Design
+4.1 Design Goals
+• The design of the web application involves the design of the forms for listing the
+products, search for products, display the complete specification for the product,
+and design a shopping cart that is easy to use.
+• Design of an interactive application that enables the user to filter the products
+based on different parameters.
+• Design of an application that has features like drag and drop etc.
+• Design of application that decreases data transfers between the client and the
+server.
+12
+4.2Architectural Design
+4.2.1Architectural Context Diagram
+Figure 4.1 Architectural Context Diagram
+4.2.2 Description of Architectural Design
+4.3 Procedural/Modular Approach
+Following are all the modules designed for the Online Shopping System.
+4.3.1 Shop Products Module
+This module starts when the user visits the home page or when a user searches for
+a product by entering a search term. This part of the application includes displaying all
+the products that are available or the products that match the search term entered by the
+user. The user can then filter these products based on various parameters like
+manufacturer, product type, operating system supported or a price range. The user browse
+through the products and each product would be displayed with an image and its features
+like operating system supported, number of user licenses and if it is a full version or an
+upgrade version. A user can add a product to the cart either by dragging the product and
+dropping it in the cart or by clicking a button. The user would be able to see the shopping
+cart summary.
+4.3.2 Product Description Module
+This module starts when a user visits the product description page. A user can
+view various images of the product of different sizes. The use can see an enlarged image
+in a popup window. The user can view the complete specification of the product like its
+features, operating system supported, system requirements etc. A user can also view the
+manufacturer information and also information about rebates, exchange policies etc. A
+user can also view the reviews of the product. A user can also write a review for the
+product.
+4.3.3 Shopping Cart Module
+This module starts when the user views the shopping cart. All the products that
+have been added to the shopping cart by the user are listed along with their price and the
+quantity. The total price of all the products added to cart is displayed. A user can edit the
+quantity of each product or remove the product from the shopping cart. A user can
+remove the product from the cart by clicking a button or by dragging the product and
+dropping it outside the cart. The total price changes accordingly when a user edits the
+quantity of a product or when a product is removed from the cart.
+14
+5. Implementation
+5.1 Database Design and Implementation
+The design of the database was similar to the analysis phase. The database has been
+developed using SQL Server 2005.
+Figure 5.1 Database Implementation using SQL Server 2005
+These are the main tables in the application and others are lookup and query tables. The
+tables were derived from the ER-Diagram.
+15
+5.2 User Interface Design and Implementation
+screens design
+19
+5.3 Technical Discussions
+The products can be filtered based on various parameters like Manufacturer,
+Product Type, Operating System supported etc. Initially it was decided to have the
+various list items predefined. But with time new manufacturers and product types could
+be added. So the values for the list of manufacturers and product types are loaded
+dynamically by retrieving from the database. Also it was decided initially to have a drop
+down list for price range and the user could select a price range from the ranges available.
+But this would limit the user’s ability to filter the products based on different price
+ranges. Instead providing two text fields so that the user can enter their price range would
+give them more flexibility.
+A product could be added to a shopping cart by dragging it and dropping it in the cart
+area. Items in the cart could be removed by clicking a button. To maintain symmetry and
+ease of use products could be removed from the cart by dragging the product out of the
+cart.
+A product can be added to the cart by dragging it and dropping it in the cart.
+Initially it was decided that when a product is dropped in the cart the cart summary label
+could be updated on the client side without any call to the server and later the session
+variables (Shopping cart) could be updated. This would result in loss of information when
+the user loses internet connection. So when a product is dropped in the cart area a web
+service is called and this service updates the session variables for the shopping cart and
+the cart summary is recalculated and sent back to the client. This would improve the
+reliability of the application.
+6. Testing
+Unit testing emphasizes the verification effort on the smallest unit of software
+
+6.2 Integration Testing
+
+6.3 Validation Testing
+It provides final assurances that software meets all functional, behavioral & performance
+requirement. Black box testing techniques are used.
+There are three main components
+- Validation test criteria (no. in place of no. & char in place of char)
+- Configuration review (to ensure the completeness of s/w configuration.)
+- Alpha & Beta testing-Alpha testing is done at developer’s site i.e. at home & Beta
+testing once it is deployed. Since I have not deployed my application, I could not do the
+Beta testing.
+Test Cases-
+I have used a number of test cases for testing the product. There were
+different cases for which different inputs were used to check whether desired output is
+produced or not.
+1. Addition of a new product to the cart should create a new row in the shopping
+cart.
+2. Addition of an existing product to the cart has to update the quantity of the
+product.
+22
+3. Any changes to items in the cart have to update the summary correctly.
+4. Because same page is inserting data into more than one table in the database
+atomicity of the transaction is tested.
+5. The state of the system after a product has been dragged in to the cart should be
+same as the state of the system if the same product is added to the cart by clicking
+a button.
+(1 liked)​[17:29] Mantha Chakradhar Murthy (Guest)
+    
+6.4 White Box Testing
+Observations:
+
+Response Time of a complex webpage with database and business logic functions is far
+more than a simple webpage.
+Factors affecting Response Time:
+• Limited System Hardware Resources (CPU, RAM, Disks) and Configuration
+• JMeter Tests and Application running on the same machine.
+Remote Testing:
+Users Loop Count Ramp Up
+period(sec)
+Cart Details
+Page(ms)
+Shop Products
+page(ms)
+100 150 10 792 8312
+500 150 10 6392 99069
+1000 150 10 20457 227056
+Observations:
+Response Time of a complex webpage with database and business logic functions is far
+more than a simple webpage. The Response times of remote testing are better than those
+of local testing when the number of users is comparatively lesser.
+Factors affecting Response Time:
+• Better Hardware Resources (CPU, RAM, Disks) and Configuration for the
+Application as it was hosted on a web server.
+• JMeter had better access to hardware resources as the application is not on the
+same machine.
+Using this above tabular data, I can say that the system is adequate to handle the normal
+load and the users won’t lose their focus.
+25
+
+7. Results & Challenges
+The application can be used for any Ecommerce application. It is easy to use, since it
+uses the GUI provided in the user dialog. User friendly screens are provided. The
+application is easy to use and interactive making online shopping a recreational
+activity for users. It has been thoroughly tested and implemented.
+7.1 Challenges
+• Compatibility with browsers like Mozilla Firefox, Internet explorer etc
+• Using a layered approach in developing the application which would make the
+application maintainable.
+• Learning new technologies like using JavaScript for drag and drop behavior and
+Ajax toolkit controls with little guidance.
+The overall idea of doing this project is to get a real time experience. Learn new
+technologies.
+8. Conclusions
+The ‘Online Shopping’ is designed to provide a web based application that would make
+searching, viewing and selection of a product easier. The search engine provides an easy
+and convenient way to search for products where a user can Search for a product
+interactively and the search engine would refine the products available based on the
+user’s input. The user can then view the complete specification of each product. They can
+also view the product reviews and also write their own reviews. Use of Ajax components
+would make the application interactive and prevents annoying post backs. Its drag and
+drop feature would make it easy to use.
+8.1 Limitations
+This application does not have a built in check out process. An external checkout
+package has to be integrated in to this application. Also users cannot save the shopping
+carts so that they can access later i.e. they cannot create wish lists which they can access
+later. This application does not have features by which user can set price ranges for
+products and receive alerts once the price reaches the particular range.
+26
+8.2 Scope for Future Work
+9. References

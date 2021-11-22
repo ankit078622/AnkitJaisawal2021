@@ -1,0 +1,27 @@
+https://dinarys.com/blog/how-to-plan-and-manage-e-commerce-projects
+
+
+https://www.atlassian.com/software/jira
+
+
+UML Diagram part
+https://www.tutorialspoint.com/uml/uml_standard_diagrams.htm
+
+Tools to design UML diagram
+https://www.smartdraw.com/uml-diagram/uml-diagram-tool.htm
+
+Diagram 
+1)class digram
+2)object
+3)package digram
+4)deployemnt
+
+uml diagrm
+https://www.uml-diagrams.org/package-diagrams-overview.html
+https://www.uml-diagrams.org/airport-checkin-uml-use-case-diagram-example.html
+
+
+
+https://www.uml-diagrams.org/association.html
+
+
