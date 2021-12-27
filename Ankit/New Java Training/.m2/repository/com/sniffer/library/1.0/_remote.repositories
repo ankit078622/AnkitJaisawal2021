@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Dec 08 16:22:15 IST 2021
+library-1.0.pom>=
+library-1.0.jar>=
