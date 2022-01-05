@@ -7,13 +7,14 @@ public class RemoveDuplicates {
 		Object array[] = new Object[input.length];
 		int i, j = 0;
 		// Loop for removing the duplicates
-		for (i = 0; i < input.length - 1; i++) {
+		for (i = 0; i < input.length -1; i++) {
 			if (input[i] != input[i + 1]) {
 				array[j] = input[i];
 				j = j + 1;
 			}
 		}
 		array[j] = input[input.length - 1];
+		
 		// Loop for printing the output
 		for (i = 0; i <= j; i++) {
 			if (i < j) {
@@ -30,6 +31,7 @@ public class RemoveDuplicates {
 	public static void main(String args[]) {
 		int i, j;
 		Integer integerArray[] = { 1, 2, 3, 1, 5, 9, 6, 3 };
+		// {1,1,2,,3,3,5,6,9}
 		String str[] = { "Abb", "Abb", "B", "C" };
 		Character charArray[] = { 'a', 'a', 'B', 'C' };
 

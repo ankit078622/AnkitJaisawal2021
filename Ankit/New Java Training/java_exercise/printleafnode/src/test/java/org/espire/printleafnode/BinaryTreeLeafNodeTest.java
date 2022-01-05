@@ -12,6 +12,20 @@ import org.junit.Test;
  */
 public class BinaryTreeLeafNodeTest {
 
+	/**
+	 *               root
+	 *               1
+	 *              / \   
+	 *   root.left 2   3 root.right
+	 *            /   / \
+*root.left.left  4   5   8 root.right.right
+	 *              / \ / \
+	 *             5  7 12 18 root.right.right.right
+	 *            |   |   |
+	 *            |   |   root.right.right.left  
+	 *            |  root.right.left.right
+	 *           root.right.left.left  
+	 */
 	@Test
 	public void testLeafNode() {
 		BinaryTreeLeafNode.TreeNode root = BinaryTreeLeafNode.addNewNode(1);

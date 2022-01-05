@@ -16,27 +16,27 @@ public class MergeSort {
 			temp[i] = array[i];
 		}
 		// traverse left sorted subarray
-		Integer lowIndex = low; 
+		Integer leftSubArray = low; 
 		// traverse right sorted subarray
-		Integer j = mid + 1; 
+		Integer rightSubArray = mid + 1; 
 		// will merge both arrays into original array (array)
 		Integer k = low; 
 
-		while (lowIndex <= mid && j <= high) {
-			if (temp[lowIndex] <= temp[j]) {
-				array[k] = temp[lowIndex];
-				lowIndex++;
+		while (leftSubArray <= mid && rightSubArray <= high) {
+			if (temp[leftSubArray] <= temp[rightSubArray]) {
+				array[k] = temp[leftSubArray];
+				leftSubArray++;
 			} else {
-				array[k] = temp[j];
-				j++;
+				array[k] = temp[rightSubArray];
+				rightSubArray++;
 			}
 			k++;
 		}
 
-		while (lowIndex <= mid) {
-			array[k] = temp[lowIndex];
+		while (leftSubArray <= mid) {
+			array[k] = temp[leftSubArray];
 			k++;
-			lowIndex++;
+			leftSubArray++;
 		}
 	}
 

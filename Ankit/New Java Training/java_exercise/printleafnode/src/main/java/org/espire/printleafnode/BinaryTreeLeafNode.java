@@ -6,7 +6,7 @@ public class BinaryTreeLeafNode {
 	public static class TreeNode {
 		public Integer data;
 		public TreeNode left, right;
-	};
+	}
 
 	// Function to print leaf
 	// nodes from left to right

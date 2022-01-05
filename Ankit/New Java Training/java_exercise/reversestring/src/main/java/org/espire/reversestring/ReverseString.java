@@ -10,7 +10,7 @@ public class ReverseString {
 	public static String reverseString(String str) {
 		
 		//Declaring variable
-		int i;
+		Integer i;
 		
 		//Initializing character array
 		char [] stringChar=str.toCharArray();

@@ -17,10 +17,18 @@ public class ReverseStringTest {
 	 * Test method for {@link org.espire.reversestring.ReverseString#reverseString(java.lang.String)}.
 	 */
 	@Test
-	public void testReverseString() {
+	public void testReverseString1() {
 		//Test cases
 		assertEquals("tima",ReverseString.reverseString("amit"));
+	}
+	@Test
+	public void testReverseString2() {
+		//Test cases
 		assertEquals("lawasiaj",ReverseString.reverseString("jaisawal"));
+	}
+	@Test
+	public void testReverseString3() {
+		//Test cases
 		assertEquals("yad",ReverseString.reverseString("day"));
 	}
 	
@@ -28,11 +36,19 @@ public class ReverseStringTest {
 	 * 
 	 */
 	@Test
-	public void testReverseStringByMethod() {
+	public void testReverseStringByMethod1() {
 		//Test cases
 		assertEquals("tima",ReverseStringByMethod.reverseString("amit"));
-		assertEquals("lawasiaj",ReverseStringByMethod.reverseString("jaisawal"));
-		assertEquals("yad",ReverseStringByMethod.reverseString("day"));
 	}
 
+	@Test
+	public void testReverseStringByMethod2() {
+		//Test cases
+		assertEquals("lawasiaj",ReverseStringByMethod.reverseString("jaisawal"));
+	}
+	@Test
+	public void testReverseStringByMethod3() {
+		//Test cases
+		assertEquals("yad",ReverseStringByMethod.reverseString("day"));
+	}
 }

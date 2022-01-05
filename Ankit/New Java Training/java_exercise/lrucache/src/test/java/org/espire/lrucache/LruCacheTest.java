@@ -20,5 +20,22 @@ public class LruCacheTest {
 		cache.refer(1);
 		cache.display();
 	}
+	
+	/**
+	 *Test case for LruCacheNoDuplicate class
+	 */
+	@Test
+	public void testLruCacheNoDuplicate() {
+		LruCacheNoDuplicate cache = new LruCacheNoDuplicate(3);
+		cache.addValue(5);
+		cache.addValue(9);
+		cache.addValue(7);
+		cache.addValue(88);
+		cache.addValue(77);
+		cache.addValue(1);
+		cache.addValue(2);
+		cache.addValue(3);
+		cache.display();
+	}
 
 }

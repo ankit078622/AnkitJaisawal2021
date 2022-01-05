@@ -16,18 +16,19 @@ class SynchroniseThread implements Runnable {
 	public void run() {
 		// getting the current thread name
 		String thredName = Thread.currentThread().getName();
-		System.out.println(thredName + " acquire lock on " + object1);
-		// Synchronized() method is used to lock an object for any shared resource. When
-		// a thread invokes the synchronized() method,
-		// it automatically acquires the lock for that object and releases it when the
-		// thread completes its task.
+		//System.out.println(thredName + " acquire lock on " + object1);
+		/**
+		 * Synchronized() method is used to lock an object for any shared resource. When
+		 * a thread invokes the synchronized() method, it automatically acquires the
+		 * lock for that object and releases it when the thread completes its task.
+		 */
 		synchronized (object1) {
 			System.out.println(thredName + " acquired lock on " + object1);
 			// calling work() method
 			work();
 		}
 		System.out.println(thredName + " released lock of " + object1);
-		System.out.println(thredName + " acquire lock on " + object2);
+		//System.out.println(thredName + " acquire lock on " + object2);
 
 		synchronized (object2) {
 			System.out.println(thredName + " acquire lock on " + object2);
@@ -40,7 +41,7 @@ class SynchroniseThread implements Runnable {
 	private void work() {
 		try {
 			/**
-			 *  the sleep() method suspends the execution of the current thread for 5 seconds
+			 * the sleep() method suspends the execution of the current thread for 5 seconds
 			 */
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -60,18 +61,19 @@ class SynchroniseThread implements Runnable {
 		// executing thread1
 		thread1.start();
 		/**
-		 *  the sleep() method suspends the execution of the current thread (thread1) for
-		 *  the specific period
+		 * the sleep() method suspends the execution of the current thread (thread1) for
+		 * the specific period
 		 */
 		Thread.sleep(2000);
-		
+
 		/**
-		 *  executing thread2
+		 * executing thread2
 		 */
-		
+
 		thread2.start();
 		/**
-		 *  suspends the execution of the current thread (thread2) for the specific period
+		 * suspends the execution of the current thread (thread2) for the specific
+		 * period
 		 */
 		Thread.sleep(2000);
 	}
