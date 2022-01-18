@@ -29,6 +29,8 @@
     <module>vendingmachine</module>
     <module>vendingmachinebylombok</module>
     <module>sortingbyrecursion</module>
+    <module>simpleinterest</module>
+    <module>compoundInterest</module>
   </modules>
   <dependencies>
 <!-- https://mvnrepository.com/artifact/junit/junit -->
