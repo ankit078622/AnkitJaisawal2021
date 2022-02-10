@@ -1,0 +1,112 @@
+27/12/2021
+4thread deadlock
+Lru again
+
+01/01/2022
+Inventory
+Order
+Product
+Requirement geather
+
+Project management
+
+
+07/01/2022
+B2C =: Bussiness to customer
+In B2C we have limit of maximum and minimum.
+But it has different max and min limits.
+
+B2B =: Manufacturer/Distributer to Other distributer
+In B2C we have limit of maximum and minimum.
+But it has different max and min limits.
+
+Supply chain : Manufacturer, Customer
+
+Inventory management : Manfacture date, Expiry date
+
+
+Order Management : Checkout , 
+
+
+
+
+10/01/2022
+Spring boot is a frameworks of framework
+
+Distribution network: Ex-: Blockchain
+
+Multiple inctecnces windup togather is cluster. Ex: Google
+
+
+12/01/2022
+Why we are using the dependencies
+
+maven build tool
+Why parent is mentioned why do we include
+What is the link dependecies with auto configuration
+dependencies injection
+what spring started web do
+What is starter
+soap api
+@Service 
+What are DEV tools
+What are actuators
+WE have One service interface and Second is Serviceimpl
+
+
+14/01/2022
+Component : Superset of repository or service
+Dispatcher servlet
+JPA 3 features
+NoCode
+Boiler plate code
+Generated quary
+Different b/w Gradle and Maven
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
