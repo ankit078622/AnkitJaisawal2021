@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+    <chapter>
+        <title>This is the title of the first chapter</title>
+        <paragraph>This paragraph is the content of the first chapter. In
+            real life a chapter would probably have a lot of paragraphs.</paragraph>
+    </chapter>
+    <chapter>
+        <title>This is the title of the second chapter</title>
+        <paragraph>This paragraph is the content of the second chapter.</paragraph>
+    </chapter>
+    <chapter>
+        <title>This is the title of the third chapter</title>
+        <paragraph>This paragraph is the content of the third chapter.</paragraph>
+    </chapter>
+    <chapter>
+        <title>This is the title of the fourth chapter</title>
+        <paragraph>This paragraph is the content of the fourth chapter.</paragraph>
+    </chapter>
+</report>

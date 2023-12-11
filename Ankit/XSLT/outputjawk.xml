@@ -1,0 +1,286 @@
+<html>
+   <body>
+      <center>
+         <h1>JAWK Assignment</h1>
+      </center>
+      <h3>List of Doctor Table</h3>
+      <table border="1">
+         <tr bgcolor="#9acd32">
+            <th style="text-align:left">ID</th>
+            <th style="text-align:left">Name</th>
+            <th style="text-align:left">Surname</th>
+            <th style="text-align:left">Address</th>
+            <th style="text-align:left">Phone Number</th>
+            <th style="text-align:left">DOB</th>
+            <th style="text-align:left">Specialization</th>
+         </tr>
+         <tr>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td>3</td>
+         </tr>
+         <tr>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Avinash</td>
+            <td>Jaisawal</td>
+            <td>Noida, Sector :18</td>
+            <td>+91 8564925769</td>
+            <td>02/05/1990</td>
+            <td>Surgeon</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Raj</td>
+            <td>Mishra</td>
+            <td>Lucknow, Sector :28</td>
+            <td>+91 8524973269</td>
+            <td>31/01/1980</td>
+            <td>Psychiatrist</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>Sunita</td>
+            <td>Garg</td>
+            <td>E-190, Sector 63 Noida, Uttar Pradesh</td>
+            <td>+91 61279 58269</td>
+            <td>21/12/1993</td>
+            <td>Cardiologist</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>Mukesh</td>
+            <td>Yadav</td>
+            <td>A-42, Ground Floor, Sector-4 Noida, Uttar Pradesh, 201301</td>
+            <td>+91 89128 52238</td>
+            <td>09/12/1988</td>
+            <td>Cardiologist</td>
+         </tr>
+      </table>
+      <h3>Table of Doctors Showing Number Of Appointments</h3>
+      <table border="1">
+         <tr bgcolor="#9acd32">
+            <th style="text-align:left">Name</th>
+            <th style="text-align:left">Surname</th>
+            <th style="text-align:left">Address</th>
+            <th style="text-align:left">Phone Number</th>
+            <th style="text-align:left">DOB</th>
+            <th style="text-align:left">Specialization</th>
+            <th style="text-align:left">Appointmentday</th>
+         </tr>
+         <tr>
+            <td>Avinash</td>
+            <td>Jaisawal</td>
+            <td>Noida, Sector :18</td>
+            <td>+91 8564925769</td>
+            <td>02/05/1990</td>
+            <td>Surgeon</td>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td>Raj</td>
+            <td>Mishra</td>
+            <td>Lucknow, Sector :28</td>
+            <td>+91 8524973269</td>
+            <td>31/01/1980</td>
+            <td>Psychiatrist</td>
+            <td>3</td>
+         </tr>
+         <tr>
+            <td>Sunita</td>
+            <td>Garg</td>
+            <td>E-190, Sector 63 Noida, Uttar Pradesh</td>
+            <td>+91 61279 58269</td>
+            <td>21/12/1993</td>
+            <td>Cardiologist</td>
+            <td>1</td>
+         </tr>
+         <tr>
+            <td>Mukesh</td>
+            <td>Yadav</td>
+            <td>A-42, Ground Floor, Sector-4 Noida, Uttar Pradesh, 201301</td>
+            <td>+91 89128 52238</td>
+            <td>09/12/1988</td>
+            <td>Cardiologist</td>
+            <td>4</td>
+         </tr>
+      </table>
+      <h3>Table of Doctors Showing Appointment number</h3>
+      <table border="1">
+         <tr bgcolor="#9acd32">
+            <th style="text-align:left">Name</th>
+            <th style="text-align:left">Surname</th>
+            <th style="text-align:left">Phone Number</th>
+            <th style="text-align:left">Specialization</th>
+            <th style="text-align:left">Appointment Number</th>
+         </tr>
+         <tr>
+            <td>Avinash</td>
+            <td>Jaisawal</td>
+            <td>+91 8564925769</td>
+            <td>Surgeon</td>
+            <td>2815,1070</td>
+         </tr>
+         <tr>
+            <td>Raj</td>
+            <td>Mishra</td>
+            <td>+91 8524973269</td>
+            <td>Psychiatrist</td>
+            <td>666,299,290</td>
+         </tr>
+         <tr>
+            <td>Sunita</td>
+            <td>Garg</td>
+            <td>+91 61279 58269</td>
+            <td>Cardiologist</td>
+            <td>9653</td>
+         </tr>
+         <tr>
+            <td>Mukesh</td>
+            <td>Yadav</td>
+            <td>+91 89128 52238</td>
+            <td>Cardiologist</td>
+            <td>928,352,1692,206</td>
+         </tr>
+      </table>
+      <h3>Table of Patient</h3>
+      <table border="1">
+         <tr bgcolor="#9acd32">
+            <th style="text-align:left">ID</th>
+            <th style="text-align:left">Name</th>
+            <th style="text-align:left">Surname</th>
+            <th style="text-align:left">Address</th>
+            <th style="text-align:left">Phone Number</th>
+            <th style="text-align:left">DOB</th>
+            <th style="text-align:left">Appointment Number</th>
+            <th style="text-align:left">Ill Details</th>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Ravinder</td>
+            <td>Kumar</td>
+            <td>10 Tenth St, Decapolis</td>
+            <td>+91 79797 37819</td>
+            <td>12/06/1993</td>
+            <td>2815</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Garfield</td>
+            <td>Villanueva</td>
+            <td>H-91, Ground Floor, Sec-63 Noida, Uttar Pradesh, 201301</td>
+            <td>+91 61279 33182</td>
+            <td>06/09/1997</td>
+            <td>9653</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>Nicolas </td>
+            <td> Joyner</td>
+            <td>G-10, Krishna Complex, Sector 31 Noida, Uttar Pradesh, 201301</td>
+            <td>+91 788 721 2887</td>
+            <td>25/03/1981</td>
+            <td>928</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>Devante</td>
+            <td>Huber</td>
+            <td>C-Block, Sector-11 Noida, Uttar Pradesh, 201301</td>
+            <td>+91 89174 00215</td>
+            <td>01/08/1980</td>
+            <td> 352</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>5</td>
+            <td>Jai</td>
+            <td>Bannister</td>
+            <td>A-3, Sector 31 Noida, Uttar Pradesh, 201301</td>
+            <td>+91 65706 61165</td>
+            <td>23/01/1984</td>
+            <td>1692</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>5</td>
+            <td>Harold</td>
+            <td>Seymour</td>
+            <td>A-3, Sector 58 Noida, Uttar Pradesh, 201301</td>
+            <td>+91 788 766 0683</td>
+            <td>06/12/1995</td>
+            <td>206</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>6</td>
+            <td>Robert</td>
+            <td>Tatiana</td>
+            <td>C-23, 2nd Floor, Sector 63 Noida, Uttar Pradesh, 201301</td>
+            <td>+91 93314 77727</td>
+            <td>06/12/1995</td>
+            <td>135</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>7</td>
+            <td>Mylo</td>
+            <td>Hammond</td>
+            <td>Shop No 41, Gurgaon, Gurgaon Delhi, Delhi, 122001</td>
+            <td>+91 61279 72249</td>
+            <td>01/08/1980</td>
+            <td>109</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>Erica</td>
+            <td>Gardner</td>
+            <td>113,cie, Balanagar Hyderabad, Andhra Pradesh, 500042</td>
+            <td>+91 72228 44276</td>
+            <td>15/01/1984</td>
+            <td>299</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>9</td>
+            <td>Robert</td>
+            <td>Alli</td>
+            <td>Qp 56, Pitampura Delhi, Delhi, 110088</td>
+            <td>+91 61279 68215</td>
+            <td>27/06/1988</td>
+            <td>290</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>10</td>
+            <td>Robson</td>
+            <td>Kumar</td>
+            <td>C255, Sector 63 Noida, Uttar Pradesh, 201301</td>
+            <td>+91 80794 71735</td>
+            <td>16/12/1983</td>
+            <td>666</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>11</td>
+            <td>Jhon</td>
+            <td>Roi</td>
+            <td>E-190, Sector 63 Noida, Uttar Pradesh, 201301</td>
+            <td>+91 61280 78565</td>
+            <td>12/06/1986</td>
+            <td>1070</td>
+            <td></td>
+         </tr>
+      </table>
+   </body>
+</html>

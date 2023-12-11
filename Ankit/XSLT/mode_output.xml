@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html><html>
+   <head>
+      <title>My output</title>
+   </head>
+   <body>
+      <h2>Contents</h2>
+      <ul>
+         <li>This is the title of the first chapter</li>
+         <li>This is the title of the second chapter</li>
+         <li>This is the title of the third chapter</li>
+         <li>This is the title of the fourth chapter</li>
+      </ul>
+      <hr/>
+      
+      <h2>This is the title of the first chapter</h2>
+      
+      <p>This paragraph is the content of the first chapter. In
+         real life a chapter would probably have a lot of paragraphs.</p>
+      
+      
+      <h2>This is the title of the second chapter</h2>
+      
+      <p>This paragraph is the content of the second chapter.</p>
+      
+      
+      <h2>This is the title of the third chapter</h2>
+      
+      <p>This paragraph is the content of the third chapter.</p>
+      
+      
+      <h2>This is the title of the fourth chapter</h2>
+      
+      <p>This paragraph is the content of the fourth chapter.</p>
+      </body>
+</html>
